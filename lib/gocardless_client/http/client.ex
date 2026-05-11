@@ -14,7 +14,7 @@ defmodule GoCardlessClient.HTTP.Client do
   alias GoCardlessClient.HTTP.RateLimiter
 
   @user_agent "gocardless_client/1.0.0 (Elixir)"
-  @version_header "GoCardlessClient-Version"
+  @version_header "GoCardless-Version"
 
   @type method :: :get | :post | :put | :patch | :delete
   @type response :: {:ok, map() | list() | nil} | {:error, APIError.t() | Error.t()}
